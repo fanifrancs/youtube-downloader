@@ -1,3 +1,3 @@
-# oaucxp
+# youtube-downloader
 
-Anonymously share your crazy experiences on OAU campus.
+A simple YouTube downloader built with ytdl module.
