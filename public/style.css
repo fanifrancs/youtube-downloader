@@ -1,0 +1,30 @@
+.form-c{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.faq{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.showfaqans{
+    display: none;
+}
+
+.iframe{
+	padding-bottom:56.25%;
+	position:relative;
+	display:block; 
+	width: 100%
+}
+
+iframe{
+	position:absolute;
+	top:0;
+	left: 0
+}

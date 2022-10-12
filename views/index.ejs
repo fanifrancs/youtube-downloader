@@ -1,0 +1,38 @@
+<%- include ('./partials/header') %>
+		<div class="container">
+			<h1 class="text-center text-danger m-4">
+				<strong>Instantly download videos and audios from YouTube</strong>
+			</h1>
+			<div class="form-c">
+				<form method="get" action='/download'>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Enter Video URL"
+	                    name="url"
+					/>
+					<button type="submit" class="btn btn-danger w-100"><i class="fa-solid fa-download"></i></button>
+				</form>
+			</div>
+			<div class="row">
+		        <div class="col-sm-3 mt-4">
+		          	<div class="p-4 bg-dark text-white rounded">
+					  <h2 class="text-danger"><i class="fa-solid fa-download"></i> Free Download</h2>
+					  <p>Unlimited conversion and free download.</p>
+					</div>
+		        </div>
+		        <div class="col-sm-3 mt-4">
+		          	<div class="p-4 bg-dark text-white rounded">
+					  <h2 class="text-danger"><i class="fa-sharp fa-solid fa-film"></i> Video & Audio</h2>
+					  <p>Directly Download Video & Audio. Support downloading with all formats.</p>
+					</div>
+		        </div>
+		        <div class="col-sm-3 mt-4">
+		          	<div class="p-4 bg-dark text-white rounded">
+					  <h2 class="text-danger"><i class="fa-solid fa-burger"></i> Easy Download</h2>
+					  <p>No registration required. Fully compatible with all browsers.</p>
+					</div>
+		        </div>
+		    </div>
+		</div>
+<%- include ('./partials/footer') %>		

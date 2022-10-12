@@ -1,0 +1,25 @@
+<%- include ('./partials/header') %>
+		<div class="container">
+			<center>
+				<div class="iframe">
+				  <iframe width="100%" height="100%" src="<%= url %>"frameborder="0"></iframe>
+				</div>
+			</center>
+		    <div class="row">
+		    	<% info.forEach((format) => { %>
+		    		<div class="col-md-3 col-sm-6 mt-4">
+			    		<button class="btn btn-danger w-100">
+							<a class="text-light" target="_blank" href="<%= format.url %>" download>
+								<%= format.mimeType.split(";")[0] %> <%= format.hasVideo
+								? format.height + "p" : "" %> <% if(!format.hasAudio) {
+								%>
+								<i class="fas fa-volume-mute text-light"></i>
+								<% } %>
+							</a>
+						</button>
+					</div>
+				<% }) %>
+		    </div><br>
+		    <a href="/">Go back to home page</a>
+  		</div>
+<%- include ('./partials/footer') %>
